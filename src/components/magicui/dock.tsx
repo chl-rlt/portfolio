@@ -2,7 +2,13 @@
 
 import React, { useRef } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import {
+  motion,
+  useMotionValue,
+  useSpring,
+  useTransform,
+  type MotionValue,
+} from "framer-motion";
 import { cn } from "@/lib/utils"; // Assurez-vous que cette fonction est correctement importée
 
 const DEFAULT_MAGNIFICATION = 60;
@@ -47,7 +53,7 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
         })}
       >
         {React.Children.map(children, (child) =>
-          React.cloneElement(child as React.ReactElement<any>, {
+          React.cloneElement(child as React.ReactElement, {
             mousex,
             magnification,
             distance,
@@ -64,7 +70,7 @@ export interface DockIconProps {
   size?: number;
   magnification?: number;
   distance?: number;
-  mousex?: any;
+  mousex: MotionValue<number>;
   className?: string;
   children?: React.ReactNode;
 }
