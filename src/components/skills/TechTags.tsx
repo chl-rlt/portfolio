@@ -63,7 +63,7 @@ const TechTags = () => {
   return (
     <div className="mt-6">
       <div className="mb-6">
-        {/* <Checkbox.Root
+        <Checkbox.Root
           checked={isList}
           onCheckedChange={() => setIsList(!isList)}
           className="CheckboxRoot"
@@ -76,7 +76,7 @@ const TechTags = () => {
         </Checkbox.Root>
         <label className="Label" htmlFor="c1">
           Show as List
-        </label> */}
+        </label>
       </div>
 
       {isList ? (
