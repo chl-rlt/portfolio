@@ -1,0 +1,150 @@
+[
+    {
+        "id": "1",
+        "name": "Vigicultures",
+        "date": "2021 - Present",
+        "repo": "Private",
+        "descriptionTitle": "D2C & B2B ecommerce site and blog",
+        "description": "with elegant solutions for a complex codebase and customer journey.",
+        "images": [
+            {
+                "key": "home",
+                "h": "780",
+                "w": "556",
+                "url": "/images/vigi/vigi-home.png",
+                "device": "desktop"
+            },
+            {
+                "key": "parcelles",
+                "h": "780",
+                "w": "556",
+                "url": "/images/vigi/parcelle.png",
+                "device": "desktop"
+            }
+        ],
+        "stack": [
+            {
+                "key": "react",
+                "name": "React"
+            },
+            {
+                "key": "material-ui",
+                "name": "Material UI"
+            },
+            {
+                "key": "nodejs",
+                "name": "Node.js"
+            },
+            {
+                "key": "fastify",
+                "name": "Fastify"
+            },
+            {
+                "key": "mongodb",
+                "name": "MongoDB"
+            },
+            {
+                "key": "prisma",
+                "name": "Prisma"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Iplan.",
+        "repo": "Private",
+        "date": "2023 - 2024",
+        "descriptionTitle": "An open source portfolio",
+        "description": "built on Next.js and React. A fast and agile MERN stack single page application.",
+        "imageOptions": [
+            {
+                "key": "size",
+                "value": "large"
+            }
+        ],
+        "images": [
+            {
+                "key": "portfolio",
+                "hover": "left",
+                "h": "797",
+                "w": "556",
+                "url": "/img/portfolio-mock_single.png"
+            }
+        ],
+        "stack": [
+            {
+                "key": "react",
+                "name": "React"
+            },
+            {
+                "key": "ionic",
+                "name": "Ionic"
+            },
+            {
+                "key": "nodejs",
+                "name": "Node.js"
+            },
+            {
+                "key": "trpc",
+                "name": "tRPC"
+            },
+            {
+                "key": "postgresql",
+                "name": "PostgreSQL"
+            },
+            {
+                "key": "prisma",
+                "name": "Prisma"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Oté",
+        "repo": "Private",
+        "date": "2023 - Present",
+        "descriptionTitle": "An open source portfolio",
+        "description": "built on Next.js and React. A fast and agile MERN stack single page application.",
+        "imageOptions": [
+            {
+                "key": "size",
+                "value": "large"
+            }
+        ],
+        "images": [
+            {
+                "key": "portfolio",
+                "hover": "left",
+                "h": "797",
+                "w": "556",
+                "url": "/img/portfolio-mock_single.png"
+            }
+        ],
+        "stack": [
+            {
+                "key": "react",
+                "name": "React"
+            },
+            {
+                "key": "ionic",
+                "name": "Ionic"
+            },
+            {
+                "key": "nodejs",
+                "name": "Node.js"
+            },
+            {
+                "key": "trpc",
+                "name": "tRPC"
+            },
+            {
+                "key": "postgresql",
+                "name": "PostgreSQL"
+            },
+            {
+                "key": "prisma",
+                "name": "Prisma"
+            }
+        ]
+    }
+]
