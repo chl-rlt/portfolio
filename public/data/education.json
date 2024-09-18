@@ -1,0 +1,28 @@
+[
+    {
+        "logo": {
+            "key": "ecolemultimedia",
+            "hover": "left",
+            "h": "100%",
+            "w": "100%",
+            "url": "/images/logo_multimedia.png"
+        },
+        "title": "Ecole du Multimédia",
+        "description": "Studied for the Bachelor's Degree while at an Apprenticeship with Vodafone Group. Graduated with a 1st Class Bachelor's Degree in July 2023. The course covered topics such as Project Management, Corporate Strategies, Cyber Security & Ethics, Networking and more.",
+        "role": "First Class BSc. (Hons.) Digital and Technology Solutions (DTS), Software Engineer",
+        "date": "Septembre 2020 - Septembre 2021"
+    },
+    {
+        "logo": {
+            "key": "gustaveeiffel",
+            "hover": "left",
+            "h": "100%",
+            "w": "100%",
+            "url": "/images/logo_gustave.png"
+        },
+        "title": "Université Gustave Eiffel",
+        "description": "Successfully completed the initial year of my Software Engineering Bachelor's degree at Roehampton University (delivered by QA) before transferring to Lancaster University.",
+        "role": "BSc. (Hons.) Digital and Technology Solutions, Software Engineer",
+        "date": "September 2019 - September 2020"
+    }
+]
