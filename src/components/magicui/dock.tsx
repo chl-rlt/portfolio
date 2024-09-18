@@ -70,7 +70,7 @@ export interface DockIconProps {
   size?: number;
   magnification?: number;
   distance?: number;
-  mousex: MotionValue<number>;
+  mousex?: MotionValue<number>;
   className?: string;
   children?: React.ReactNode;
 }
@@ -84,8 +84,8 @@ const DockIcon = ({
   ...props
 }: DockIconProps) => {
   const ref = useRef<HTMLDivElement>(null);
-
-  const distanceCalc = useTransform(mousex, (val: number) => {
+  const mouseXValue = useMotionValue(0);
+  const distanceCalc = useTransform(mousex ?? mouseXValue, (val: number) => {
     const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
     return val - bounds.x - bounds.width / 2;
   });
