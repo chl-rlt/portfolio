@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "logo": {
+            "key": "actads",
+            "hover": "left",
+            "h": "100%",
+            "w": "100%",
+            "url": "/images/logo_actads.png"
+        },
+        "title": "ACTA DS",
+        "link": "https://doxy.me",
+        "description": "Fullstack Software Engineer at Doxy.me, a telemedicine platform used by ⅓ of the entire U.S. healthcare system. I work on the core product, building new features and improving existing ones.",
+        "tech": [
+            "React",
+            "Node.js",
+            "TypeScript",
+            "Vue",
+            "Javascript"
+        ],
+        "role": "Développeuse Fullstack",
+        "date": "September 2021 - Present"
+    },
+    {
+        "id": "2",
+        "logo": {
+            "key": "stevegates",
+            "hover": "left",
+            "h": "100%",
+            "w": "100%",
+            "url": "/images/logo_stevegates.svg"
+        },
+        "title": "Steve Gates",
+        "link": "https://doxy.me",
+        "description": "Fullstack Software Engineer at Doxy.me, a telemedicine platform used by ⅓ of the entire U.S. healthcare system. I work on the core product, building new features and improving existing ones.",
+        "tech": [
+            "Javascript"
+        ],
+        "role": "Développeuse Web",
+        "date": "September 2020 - September 2021"
+    }
+]
