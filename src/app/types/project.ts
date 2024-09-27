@@ -5,16 +5,14 @@ export type Project = {
   date: string;
   descriptionTitle: string;
   description: string;
+  moreLinks: string;
+  websiteLink: string;
   imageOptions: {
     key: string;
     value: string;
   }[];
   images: {
-    key: string;
-    device: string;
-    h: string;
-    w: string;
-    url: string;
+    imgelink: string;
   }[];
   stack: {
     key: string;
