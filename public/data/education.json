@@ -8,8 +8,8 @@
             "url": "/images/logo_multimedia.png"
         },
         "title": "Ecole du Multimédia",
-        "description": "Studied for the Bachelor's Degree while at an Apprenticeship with Vodafone Group. Graduated with a 1st Class Bachelor's Degree in July 2023. The course covered topics such as Project Management, Corporate Strategies, Cyber Security & Ethics, Networking and more.",
-        "role": "First Class BSc. (Hons.) Digital and Technology Solutions (DTS), Software Engineer",
+        "description": "Diplôme obtenu en 2021, j'ai réalisé des projets au cours de l'année avec Vue.JS et React pour la partie front et Laravel en back.",
+        "role": "Formation Développeur Web Full-Stack",
         "date": "Septembre 2020 - Septembre 2021"
     },
     {
@@ -20,9 +20,9 @@
             "w": "100%",
             "url": "/images/logo_gustave.png"
         },
-        "title": "Université Gustave Eiffel",
-        "description": "Successfully completed the initial year of my Software Engineering Bachelor's degree at Roehampton University (delivered by QA) before transferring to Lancaster University.",
-        "role": "BSc. (Hons.) Digital and Technology Solutions, Software Engineer",
-        "date": "September 2019 - September 2020"
+        "title": "Université Paris Gustave Eiffel",
+        "description": "Diplôme obtenu en 2020, j'ai suivi des cours d'algorithmes, de programmation et de gestion de projet.",
+        "role": "Master chef de projet IT",
+        "date": "Septembre 2018 - Septembre 2020"
     }
 ]

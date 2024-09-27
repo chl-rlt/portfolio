@@ -2,24 +2,27 @@
     {
         "id": "1",
         "name": "Vigicultures",
-        "date": "2021 - Present",
+        "date": "2021 - Aujourd'hui",
         "repo": "Private",
-        "descriptionTitle": "D2C & B2B ecommerce site and blog",
-        "description": "with elegant solutions for a complex codebase and customer journey.",
+        "descriptionTitle": "Plateforme intelligente d'épidémio-surveillance des végétaux.",
+        "description": "Outil avancé pour la collecte et l'analyse des observations terrain sur les parcelles. Conçue pour optimiser la détection précoce des maladies et nuisibles, cette appplication permet une gestion proactive et précise de la santé végétale.",
+        "moreLinks": "https://www.acta.asso.fr/realisations/vigicultures-2-0-systeme-dinformation-sur-lepidemiosurveillance/",
+        "websiteLink": "https://beta.vigicultures.fr/",
         "images": [
             {
-                "key": "home",
-                "h": "780",
-                "w": "556",
-                "url": "/images/vigi/vigi-home.png",
-                "device": "desktop"
+                "imgelink": "/images/projects/vigi/vigi1.png"
             },
             {
-                "key": "parcelles",
-                "h": "780",
-                "w": "556",
-                "url": "/images/vigi/parcelle.png",
-                "device": "desktop"
+                "imgelink": "/images/projects/vigi/vigi2.png"
+            },
+            {
+                "imgelink": "/images/projects/vigi/vigi3.png"
+            },
+            {
+                "imgelink": "/images/projects/vigi/vigi4.png"
+            },
+            {
+                "imgelink": "/images/projects/vigi/vigi5.png"
             }
         ],
         "stack": [
@@ -51,11 +54,13 @@
     },
     {
         "id": "2",
-        "name": "Iplan.",
+        "name": "Oté",
         "repo": "Private",
-        "date": "2023 - 2024",
-        "descriptionTitle": "An open source portfolio",
-        "description": "built on Next.js and React. A fast and agile MERN stack single page application.",
+        "date": "2023 - Ajourd'hui",
+        "descriptionTitle": "Outil de traçabilité des plantes endémiques et horticoles à La Réunion.",
+        "description": "Cette application mobile permet aux professionnels de tracer plus facilement les plants, de la récolte de la graine à sa plantation.",
+        "moreLinks": "https://www.armeflhor.fr/ote-loutil-de-tracabilite-des-plantes-endemiques-et-horticoles-a-la-reunion/",
+        "websiteLink": "https://ote-plantes.re/",
         "imageOptions": [
             {
                 "key": "size",
@@ -64,11 +69,10 @@
         ],
         "images": [
             {
-                "key": "portfolio",
-                "hover": "left",
-                "h": "797",
-                "w": "556",
-                "url": "/img/portfolio-mock_single.png"
+                "imgelink": "/images/projects/ote/ote1.png"
+            },
+            {
+                "imgelink": "/images/projects/ote/ote2.png"
             }
         ],
         "stack": [
@@ -89,22 +93,32 @@
                 "name": "tRPC"
             },
             {
+                "key": "express",
+                "name": "Express"
+            },
+            {
                 "key": "postgresql",
                 "name": "PostgreSQL"
             },
             {
                 "key": "prisma",
                 "name": "Prisma"
+            },
+            {
+                "key": "vite-pwa",
+                "name": "Vite Pwa"
             }
         ]
     },
     {
         "id": "3",
-        "name": "Oté",
+        "name": "Iplan.",
         "repo": "Private",
-        "date": "2023 - Present",
-        "descriptionTitle": "An open source portfolio",
-        "description": "built on Next.js and React. A fast and agile MERN stack single page application.",
+        "date": "2023 - 2024",
+        "descriptionTitle": "Application mobile dédiée aux préleveurs de sol.",
+        "description": "Optimisée pour faciliter les analyses agricoles. Elle permet une gestion simplifiée des prélèvements, assurant une collecte précise des échantillons de terre en vue d’analyses approfondies pour une meilleure gestion des cultures.",
+        "moreLinks": "",
+        "websiteLink": "https://franceprelevements.app/",
         "imageOptions": [
             {
                 "key": "size",
@@ -113,11 +127,7 @@
         ],
         "images": [
             {
-                "key": "portfolio",
-                "hover": "left",
-                "h": "797",
-                "w": "556",
-                "url": "/img/portfolio-mock_single.png"
+                "imgelink": "/images/projects/iplan/iplan1.png"
             }
         ],
         "stack": [
@@ -144,6 +154,10 @@
             {
                 "key": "prisma",
                 "name": "Prisma"
+            },
+            {
+                "key": "vite-pwa",
+                "name": "Vite Pwa"
             }
         ]
     }
