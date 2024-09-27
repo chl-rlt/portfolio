@@ -4,7 +4,6 @@ import React, { useCallback, useEffect } from "react";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 
 import { cn } from "@/lib/utils";
-import { useRouter } from "next/navigation";
 
 export interface MagicCardProps extends React.HTMLAttributes<HTMLDivElement> {
   gradientSize?: number;
@@ -14,7 +13,6 @@ export interface MagicCardProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export function MagicCard({
-  url,
   children,
   className,
   gradientSize = 200,
@@ -23,7 +21,6 @@ export function MagicCard({
 }: MagicCardProps) {
   const mouseX = useMotionValue(-gradientSize);
   const mouseY = useMotionValue(-gradientSize);
-  const router = useRouter();
 
   const handleMouseMove = useCallback(
     (e: React.MouseEvent<HTMLDivElement>) => {
@@ -49,10 +46,9 @@ export function MagicCard({
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       className={cn(
-        "group relative flex size-full  rounded-xl bg-neutral-100 dark:bg-neutral-900 border text-black dark:text-white",
+        "group relative flex rounded-b-lg bg-neutral-100 dark:bg-neutral-900 border text-black dark:text-white",
         className
       )}
-      onClick={() => url && router.push(url, { scroll: false })}
     >
       <div className="relative z-10">{children}</div>
       <motion.div

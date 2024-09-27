@@ -30,6 +30,11 @@ const config = {
         hero: "url('/images/cover.jpg')",
       },
       colors: {
+        "color-1": "hsl(var(--color-1))",
+        "color-2": "hsl(var(--color-2))",
+        "color-3": "hsl(var(--color-3))",
+        "color-4": "hsl(var(--color-4))",
+        "color-5": "hsl(var(--color-5))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -70,6 +75,20 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        rainbow: {
+          "0%": { "background-position": "0%" },
+          "100%": { "background-position": "200%" },
+        },
+        "border-beam": {
+          "100%": {
+            "offset-distance": "100%",
+          },
+        },
+        gradient: {
+          to: {
+            backgroundPosition: "var(--bg-size) 0",
+          },
+        },
         shimmer: {
           "0%, 90%, 100%": {
             "background-position": "calc(-100% - var(--shimmer-width)) 0",
@@ -115,6 +134,9 @@ const config = {
         },
       },
       animation: {
+        rainbow: "rainbow var(--speed, 2s) infinite linear",
+        gradient: "gradient 8s linear infinite",
+        "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
         shimmer: "shimmer 8s infinite",
         "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
         slide: "slide var(--speed) ease-in-out infinite alternate",
