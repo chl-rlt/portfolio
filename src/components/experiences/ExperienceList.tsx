@@ -15,7 +15,7 @@ export const ExperienceList = () => {
       });
   }, []);
   return (
-    <div className="sm:py-8 py-16 ">
+    <div className="sm:py-8 py-2">
       <BlurFade delay={0.25} inView>
         <h2 className="text-3xl font-bold tracking-tight dark:text-zinc-100  sm:text-4xl mb-6 ">
           Expériences
@@ -50,7 +50,7 @@ export const ExperienceList = () => {
                     {p.description}
                   </p>
 
-                  {p.link && (
+                  {/* {p.link && (
                     <a
                       href={p.link}
                       className="text-blue-300 underline break-all"
@@ -58,7 +58,7 @@ export const ExperienceList = () => {
                     >
                       {p.link}
                     </a>
-                  )}
+                  )} */}
 
                   <div className="mt-4 flex flex-wrap">
                     {p.tech.map((tech) => (

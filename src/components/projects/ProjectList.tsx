@@ -20,6 +20,9 @@ import { MagicCard } from "../magicui/magic-card";
 import { useEffect, useState } from "react";
 import { Project } from "@/app/types/project";
 import BlurFade from "../magicui/blur-fade";
+import Image from "next/image";
+import VitePWAIcon from "../icons/VItePwaIcon";
+import ExpressIcon from "../icons/ExpressIcon";
 
 export function ProjectsList() {
   const { theme } = useTheme();
@@ -40,7 +43,9 @@ export function ProjectsList() {
         </h2>
 
         <p className="my-4 text-zinc-400">
-          {"Jetez un coup d'œil à mes derniers projets."}
+          {
+            "Jetez un coup d'œil à cette selection de projets dans lesquels j'ai pu travailler."
+          }
         </p>
       </BlurFade>
       <div className="border sm:block hidden"></div>
@@ -52,26 +57,31 @@ export function ProjectsList() {
             key={project.id}
             className="w-full"
           >
+            <Image
+              src={project.images[0].imgelink}
+              width={800}
+              height={100}
+              alt="Image of the project"
+              className=" rounded-t-lg  object-cover object-center"
+            />
             <MagicCard
               key={project.id}
-              className="cursor-pointer dark:bg-[#05071998] flex-col shadow-2xl p-4 sm:p-5 pb-7"
+              className=" dark:bg-[#05071998] flex-col shadow-xl p-4 sm:p-5 pb-7"
               gradientColor={theme === "dark" ? "#000234" : "#D9D9D955"}
-              url={`projects/${project.id}`}
             >
               <div>
-                <div className="text-xs dark:text-zinc-100 text-zinc-700">
-                  {project.date ? (
-                    <span>{project.date}</span>
-                  ) : (
-                    <span>SOON</span>
-                  )}
+                <div className="text-xs dark:text-zinc-100 text-zinc-700 flex justify-between">
+                  <span>{project.date}</span>
+                  <span>
+                    <GitLabIcon />
+                  </span>
                 </div>
 
                 <h2 className="mt-4 text-xl font-bold dark:text-zinc-100 dark:group-hover:text-white text-zinc-700 sm:text-4xl font-display">
                   {project.name}
                 </h2>
                 <p className="mt-4 text-sm text-wrap duration-150 text-zinc-500 group-hover:text-zinc-400">
-                  {project.description}
+                  {project.descriptionTitle}
                 </p>
 
                 <div className="mt-4 flex flex-wrap gap-4">
@@ -85,11 +95,6 @@ export function ProjectsList() {
                       </TooltipContent>
                     </Tooltip>
                   ))}
-                </div>
-                <div>
-                  <p className="hidden text-zinc-500 dark:hover:text-zinc-400 sm:block sm:mt-5 mt-0">
-                    {"Plus d'infos"} <span aria-hidden="true">&rarr;</span>
-                  </p>
                 </div>
               </div>
             </MagicCard>
@@ -126,5 +131,9 @@ function getIcon(type: string) {
       return <PostGreSqlIcon />;
     case "ionic":
       return <IonicIcon />;
+    case "vite-pwa":
+      return <VitePWAIcon size={30} />;
+    case "express":
+      return <ExpressIcon />;
   }
 }

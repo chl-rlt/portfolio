@@ -15,7 +15,7 @@ export const EducationList = () => {
       });
   }, []);
   return (
-    <div className="sm:py-8 py-16">
+    <div className="sm:py-8 py-2">
       <BlurFade delay={0.25} inView>
         <h2 className="text-3xl font-bold tracking-tight dark:text-zinc-100  sm:text-4xl mb-6 ">
           Education
