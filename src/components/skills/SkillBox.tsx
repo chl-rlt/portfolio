@@ -27,7 +27,7 @@ const SkillBox = ({
           <h3 className="dark:text-white mb-2 text-xl tracking-tight font-semibold">
             {title}
           </h3>
-          <p className="text-zinc-400 group-hover:text-zinc-300 transition ease-in-out prose prose-invert min-w-full sm:min-h-80">
+          <p className="dark:text-zinc-400 text-zinc-500 dark:group-hover:text-zinc-300 group-hover:text-zinc-600 transition ease-in-out prose prose-invert min-w-full sm:min-h-80">
             {/* Replace all \n with a new line */}
             {desc.split("\\n").map((line, i) => (
               <Fragment key={i}>

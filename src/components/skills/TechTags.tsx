@@ -97,13 +97,13 @@ const tech = [
 ];
 
 const TechTagsMarquee = () => (
-  <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg md:shadow-xl">
+  <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg dark:md:shadow-xl">
     <Marquee pauseOnHover className="[--duration:25s]">
       <div className="flex flex-wrap">
         {tech.map((tech) => (
           <div
             key={tech.text}
-            className="text-xs mr-2 inline-flex items-center font-semibold tracking-wider uppercase px-3 py-1 rounded-full bg-gray-800 border border-gray-700"
+            className="text-xs mr-2 inline-flex items-center font-semibold tracking-wider uppercase px-3 py-1 rounded-full dark:bg-gray-800 border dark:border-gray-700 bg-gray-200 border-gray-100"
           >
             <div className="mr-2">{tech.icon}</div>
 
