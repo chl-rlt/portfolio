@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)]">
       <div className="flex lg:w-[1100px] lg:m-auto items-center justify-items-center lg:min-h-screen sm:p-8 p-8 pb-20">
-        <main className="flex flex-col sm:gap-8 row-start-2 sm:items-start items-center">
+        <main className="flex flex-col sm:gap-8 row-start-2 sm:items-start items-center mt-28 sm:mt-0">
           <BlurFade delay={0.25} inView>
             <Image
               className="rounded-full bg-gradient-to-r dark:bg-transparent from-slate-900 to-slate-700 drop-shadow-xl  sm:mt-0 mt-3"
