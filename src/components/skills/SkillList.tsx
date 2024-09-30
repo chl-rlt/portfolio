@@ -14,6 +14,7 @@ import FastifyIcon from "../icons/FastifyIcon";
 import ExpressIcon from "../icons/ExpressIcon";
 import IonicIcon from "../icons/IonicIcon";
 import ShadcnIcon from "../icons/ShadcnIcon";
+import CypressIcon from "../icons/CypressIcon";
 
 export const SkillList = () => {
   return (
@@ -60,7 +61,7 @@ export const SkillList = () => {
           />
           <SkillBox
             title="API"
-            desc="Conception et implémentation d'APIs RESTful : Expertise dans la création et la consommation d’APIs RESTful robustes et résilientes. \n\n Sécurité API : connaissances dans la sécurisation des API (authentification, autorisation, gestion des tokens)"
+            desc="Conception et implémentation d'APIs RESTful : Expertise dans la création et la consommation d’APIs RESTful robustes et résilientes. \n\n Sécurité API : connaissances dans la sécurisation des API (authentification, autorisation, gestion des tokens)."
             techTags={[
               {
                 text: "Node.JS",
@@ -78,7 +79,7 @@ export const SkillList = () => {
           />
           <SkillBox
             title="QA"
-            desc="Intégration de tests unitaires et E2E avec Playwright et Cypress. \n\n Maintient d'une bonne couverture de tests sans compromettre la productivité, en s'assurant que les fonctionnalités critiques sont toujours testées. \n\n CI/CD et intégration des tests : Familiarité avec les pipelines CI/CD où les tests sont automatisés avant les déploiements."
+            desc="Intégration de tests unitaires et E2E avec Playwright et Cypress. \n\n Maintient d'une bonne couverture de tests en s'assurant que les fonctionnalités critiques sont toujours testées. \n\n CI/CD et intégration des tests : Familiarité avec les pipelines CI/CD où les tests sont automatisés avant les déploiements."
             techTags={[
               {
                 text: "GitHub",
@@ -91,6 +92,10 @@ export const SkillList = () => {
               {
                 text: "Playwright",
                 icon: <PlaywrightIcon size={20} />,
+              },
+              {
+                text: "Cypress",
+                icon: <CypressIcon size={20} />,
               },
             ]}
           />

@@ -31,7 +31,7 @@ export const ExperienceList = () => {
             <BlurFade delay={0.25 + i * 0.1} inView key={p.title}>
               <li key={i} className="mb-10 ml-6">
                 <div className="dark:bg-gray-800 bg-gray-100 px-4 py-3 rounded-lg shadow-lg ">
-                  <span className="flex absolute -left-3.5 justify-center items-center w-7 h-7 rounded-full ring-8 bg-background ring-gray-400 dark:ring-gray-900">
+                  <span className="flex absolute -left-3.5 justify-center items-center w-7 h-7 rounded-full ring-8 bg-background ring-gray-200 dark:ring-gray-900">
                     <Image
                       src={p.logo.url}
                       alt={p.title}
@@ -46,7 +46,7 @@ export const ExperienceList = () => {
                   <p className="block mb-3 text-sm font-normal leading-none text-gray-400">
                     {p.role}
                   </p>
-                  <p className="mb-4 text-base font-sans whitespace-pre-wrap font-normal text-gray-300 prose prose-invert min-w-full">
+                  <p className="mb-4 text-base font-sans whitespace-pre-wrap font-normal dark:text-gray-300 text-gray-600 prose prose-invert min-w-full">
                     {p.description}
                   </p>
 
@@ -64,7 +64,7 @@ export const ExperienceList = () => {
                     {p.tech.map((tech) => (
                       <div
                         key={tech}
-                        className="mb-2 py-1 px-2 text-xs rounded-md mr-2 bg-gray-600 text-gray-2"
+                        className="mb-2 py-1 px-2 text-xs rounded-md mr-2 dark:bg-gray-600 bg-gray-200 text-gray-2"
                       >
                         {tech}
                       </div>

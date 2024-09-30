@@ -80,7 +80,7 @@ export function ProjectsList() {
                 <h2 className="mt-4 text-xl font-bold dark:text-zinc-100 dark:group-hover:text-white text-zinc-700 sm:text-4xl font-display">
                   {project.name}
                 </h2>
-                <p className="mt-4 text-sm text-wrap duration-150 text-zinc-500 group-hover:text-zinc-400">
+                <p className="mt-4 text-sm text-wrap duration-150 text-zinc-500 dark:group-hover:text-zinc-400 group-hover:text-zinc-600">
                   {project.descriptionTitle}
                 </p>
 

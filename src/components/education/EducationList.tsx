@@ -30,8 +30,8 @@ export const EducationList = () => {
           {educations.map((p, i) => (
             <BlurFade delay={0.25 + i * 0.1} inView key={p.title}>
               <li key={i} className="mb-10 ml-6">
-                <div className="px-4 py-3 rounded-lg shadow-lg ">
-                  <span className="flex absolute -left-3.5 justify-center items-center w-7 h-7 rounded-full bg-background ring-8 ring-gray-400 dark:ring-gray-900">
+                <div className="px-4 py-3 rounded-lg dark:shadow-lg ">
+                  <span className="flex absolute -left-3.5 justify-center items-center w-7 h-7 rounded-full bg-background ring-8 ring-gray-200 dark:ring-gray-900">
                     <Image
                       src={p.logo.url}
                       alt={p.title}
@@ -46,7 +46,7 @@ export const EducationList = () => {
                   <p className="block mb-3 text-sm font-normal leading-none text-gray-400">
                     {p.role}
                   </p>
-                  <p className="mb-4 text-base font-sans whitespace-pre-wrap font-normal text-gray-300 prose prose-invert min-w-full">
+                  <p className="mb-4 text-base font-sans whitespace-pre-wrap font-normal dark:text-gray-300 text-gray-600 prose prose-invert min-w-full">
                     {p.description}
                   </p>
 
