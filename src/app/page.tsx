@@ -13,8 +13,8 @@ import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="font-[family-name:var(--font-geist-sans)]">
-      <div className="flex lg:w-[1100px] lg:m-auto items-center justify-items-center lg:min-h-screen sm:p-8 p-8 pb-20">
+    <div className="font-[family-name:var(--font-geist-sans)] bg-section bg-no-repeat bg-contain">
+      <div className="flex lg:w-[1100px] lg:m-auto items-center justify-items-center lg:min-h-screen sm:p-8 p-8 pb-20 ">
         <main className="flex flex-col sm:gap-8 row-start-2 sm:items-start items-center mt-28 sm:mt-0">
           <BlurFade delay={0.25} inView>
             <Image
@@ -32,8 +32,8 @@ export default function Home() {
             </h1>
           </BlurFade>
           <BlurFade delay={0.5} inView>
-            <h2 className="text-2xl sm:text-5xl font-bold text-[#888889] opacity-60 sm:mt-0 mt-4 sm:text-left text-center ">
-              Développeuse Fullstack Javascript.
+            <h2 className="text-2xl sm:text-3xl font-bold text-zinc-400 opacity-60 sm:mt-0 mt-4 sm:text-left text-center ">
+              Salut ! Je suis développeuse Fullstack,
             </h2>
           </BlurFade>
 
@@ -42,12 +42,11 @@ export default function Home() {
               preRenderFirstString={true}
               sequence={[
                 500,
-                "Forte appétence pour ReactJS", // initially rendered starting point
-                // icon
+                "Vous pouvez me contacter pour un projet ReactJS",
                 1000,
-                "Forte appétence pour TypeScript",
+                "Vous pouvez me contacter pour un projet TypeScript",
                 1000,
-                "Forte appétence pour NodeJS",
+                "Vous pouvez me contacter pour un projet NodeJS",
                 500,
               ]}
               speed={50}
@@ -86,13 +85,6 @@ export default function Home() {
         id="more"
       >
         <div className=" px-3 md:px-7 lg:w-[1100px] lg:m-auto">
-          <Image
-            src="/images/section.svg"
-            alt="Hero"
-            width={1572}
-            height={795}
-            className="absolute top-0 -z-10"
-          />
           <ProjectsList />
           <SkillList />
           <ExperienceList />
