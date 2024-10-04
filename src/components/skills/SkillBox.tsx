@@ -6,6 +6,7 @@ import {
 import { useTheme } from "next-themes";
 import { Fragment } from "react";
 import { MagicCard } from "../magicui/magic-card";
+import { useClientMediaQuery } from "@/lib/clientMediaQuery";
 
 const SkillBox = ({
   title,
@@ -17,6 +18,7 @@ const SkillBox = ({
   techTags: { text: string; icon: JSX.Element }[];
 }) => {
   const { theme } = useTheme();
+  const isMobile = useClientMediaQuery("(max-width: 600px)");
   return (
     <MagicCard
       className=" dark:bg-[#05071998] flex-col shadow-xl p-4 sm:p-5 pb-7 rounded-xl"
@@ -37,17 +39,31 @@ const SkillBox = ({
             ))}
           </p>
         </div>
+        {isMobile ? (
+          <div className="mt-10 flex flex-wrap gap-1">
+            {techTags.map((tech) => (
+              <div
+                key={tech.text}
+                className="text-xs mr-2 mb-2 inline-flex items-center font-semibold tracking-wider uppercase px-3 py-1 rounded-full dark:bg-gray-800 border dark:border-gray-700 bg-slate-200 border-slate-200"
+              >
+                <div className="mr-2">{tech.icon}</div>
 
-        <div className="mt-10 flex flex-wrap gap-3">
-          {techTags?.map((tech) => (
-            <Tooltip key={tech.text}>
-              <TooltipTrigger className="">{tech.icon}</TooltipTrigger>
-              <TooltipContent className="Tooltip text-sm bg-slate-800 py-1 px-2 rounded text-white">
                 {tech.text}
-              </TooltipContent>
-            </Tooltip>
-          ))}
-        </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="mt-10 flex flex-wrap gap-3">
+            {techTags?.map((tech) => (
+              <Tooltip key={tech.text}>
+                <TooltipTrigger className="">{tech.icon}</TooltipTrigger>
+                <TooltipContent className="Tooltip text-sm bg-slate-800 py-1 px-2 rounded text-white">
+                  {tech.text}
+                </TooltipContent>
+              </Tooltip>
+            ))}
+          </div>
+        )}
       </div>
     </MagicCard>
   );
