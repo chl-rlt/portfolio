@@ -28,6 +28,7 @@ const config = {
     extend: {
       backgroundImage: {
         hero: "url('/images/cover.jpg')",
+        section: "url('/images/section.svg')",
       },
       colors: {
         "color-1": "hsl(var(--color-1))",

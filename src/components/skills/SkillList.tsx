@@ -38,7 +38,7 @@ export const SkillList = () => {
                 icon: <ReactIcon size={20} className="fill-cyan-500" />,
               },
               {
-                text: "Next.js (SSR/SSG)",
+                text: "Next.JS",
                 icon: <NextIcon size={20} />,
               },
               {

@@ -13,8 +13,8 @@ import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="font-[family-name:var(--font-geist-sans)]">
-      <div className="flex lg:w-[1100px] lg:m-auto items-center justify-items-center lg:min-h-screen sm:p-8 p-8 pb-20">
+    <div className="font-[family-name:var(--font-geist-sans)] bg-section bg-no-repeat bg-contain">
+      <div className="flex lg:w-[990px] w-full lg:m-auto items-center justify-items-center lg:min-h-screen sm:p-8 p-8 pb-20 ">
         <main className="flex flex-col sm:gap-8 row-start-2 sm:items-start items-center mt-28 sm:mt-0">
           <BlurFade delay={0.25} inView>
             <Image
@@ -27,34 +27,52 @@ export default function Home() {
             />
           </BlurFade>
           <BlurFade delay={0.5} inView>
-            <h1 className="text-2xl sm:text-6xl font-bold mb-0 sm:mt-0 mt-5">
-              Chloé Renault.
+            <h1 className="text-2xl sm:text-6xl sm:text-left text-center opacity-90 font-bold mb-0 sm:mt-0 mt-5 text-wrap">
+              Salut ! {"Moi c'est  "}
+              <span className="text-indigo-500">Chloé Renault</span>, <br /> je
+              suis Développeuse Web <br />
+              <span className="text-indigo-500">
+                <TypeAnimation
+                  preRenderFirstString={true}
+                  sequence={[
+                    500,
+                    "TypeScript",
+                    1000,
+                    "ReactJS",
+                    1000,
+                    "NodeJS",
+                    500,
+                  ]}
+                  speed={50}
+                  repeat={Infinity}
+                  className="text-2xl sm:text-6xl"
+                />
+              </span>
             </h1>
           </BlurFade>
-          <BlurFade delay={0.5} inView>
-            <h2 className="text-2xl sm:text-5xl font-bold text-[#888889] opacity-60 sm:mt-0 mt-4 sm:text-left text-center ">
-              Développeuse Fullstack Javascript.
+          {/* <BlurFade delay={0.5} inView>
+            <h2 className="text-xl sm:text-3xl font-bold text-zinc-400 opacity-60 sm:mt-0 mt-4 sm:text-left text-center ">
+              Développeuse Fullstack T.
             </h2>
-          </BlurFade>
+          </BlurFade> */}
 
-          <BlurFade delay={0.75} inView>
+          {/* <BlurFade delay={0.75} inView>
             <TypeAnimation
               preRenderFirstString={true}
               sequence={[
                 500,
-                "Forte appétence pour ReactJS", // initially rendered starting point
-                // icon
+                "Vous pouvez me contacter pour un projet ReactJS",
                 1000,
-                "Forte appétence pour TypeScript",
+                "Vous pouvez me contacter pour un projet TypeScript",
                 1000,
-                "Forte appétence pour NodeJS",
+                "Vous pouvez me contacter pour un projet NodeJS",
                 500,
               ]}
               speed={50}
               repeat={Infinity}
-              className="text-lg sm:text-3xl sm:mt-0 mt-7"
+              className="text-lg sm:text-3xl sm:mt-0 mt-7 flex sm:text-left text-center"
             />
-          </BlurFade>
+          </BlurFade> */}
 
           <BlurFade delay={1} inView>
             <div className="flex gap-4 items-center sm:flex-row sm:mt-0 mt-16">
@@ -86,13 +104,6 @@ export default function Home() {
         id="more"
       >
         <div className=" px-3 md:px-7 lg:w-[1100px] lg:m-auto">
-          <Image
-            src="/images/section.svg"
-            alt="Hero"
-            width={1572}
-            height={795}
-            className="absolute top-0 -z-10"
-          />
           <ProjectsList />
           <SkillList />
           <ExperienceList />
