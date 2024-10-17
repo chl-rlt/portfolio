@@ -17,8 +17,8 @@ const ShadcnIcon = ({
       y2="208"
       fill="none"
       stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       stroke-width="16"
     ></line>
     <line
@@ -28,8 +28,8 @@ const ShadcnIcon = ({
       y2="192"
       fill="none"
       stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       stroke-width="16"
     ></line>
   </svg>
