@@ -80,7 +80,7 @@ const CypressIcon = ({
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#97DEC0"></stop>
-        <stop offset="1" stop-color="ivory" stop-opacity="0"></stop>
+        <stop offset="1" stop-color="ivory" stopOpacity="0"></stop>
       </linearGradient>
     </defs>
   </svg>

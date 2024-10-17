@@ -24,17 +24,17 @@
 <feGaussianBlur result="effect1_foregroundBlur_340_660" stdDeviation="152"/>
 </filter>
 <radialGradient gradientTransform="translate(1123.11 259.246) rotate(90) scale(238.243)" gradientUnits="userSpaceOnUse" r="1" cy="0" cx="0" id="paint0_radial_340_660">
-<stop stop-opacity="0.29" stop-color="#8244FF"/>
-<stop stop-opacity="0" stop-color="#8244FF" offset="1"/>
+<stop stopOpacity="0.29" stop-color="#8244FF"/>
+<stop stopOpacity="0" stop-color="#8244FF" offset="1"/>
 </radialGradient>
 <radialGradient gradientTransform="translate(753.111 565.246) rotate(90) scale(238.243)" gradientUnits="userSpaceOnUse" r="1" cy="0" cx="0" id="paint1_radial_340_660">
-<stop stop-opacity="0.29" stop-color="#8244FF"/>
-<stop stop-opacity="0" stop-color="#8244FF" offset="1"/>
+<stop stopOpacity="0.29" stop-color="#8244FF"/>
+<stop stopOpacity="0" stop-color="#8244FF" offset="1"/>
 </radialGradient>
 <linearGradient gradientUnits="userSpaceOnUse" y2="384.088" x2="1240.56" y1="-139.487" x1="1356.37" id="paint2_linear_340_660">
 <stop stop-color="#F926AE"/>
 <stop stop-color="#F926AE" offset="0.21875"/>
-<stop stop-opacity="0" stop-color="#F926AE" offset="1"/>
+<stop stopOpacity="0" stop-color="#F926AE" offset="1"/>
 </linearGradient>
 </defs>
 </svg>
