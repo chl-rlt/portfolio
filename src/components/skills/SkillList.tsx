@@ -26,7 +26,7 @@ export const SkillList = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <SkillBox
             title="UI"
-            desc="Maîtrise des frameworks modernes : Une solide expérience avec des frameworks comme React ou Vue.JS. \n\n 
+            desc="Solide expérience avec des frameworks comme React ou Vue.JS. \n\n 
             UX/UI collaboration : Capacité à collaborer étroitement avec les designers UX/UI, en comprenant les besoins de l’utilisateur final. \n\n Performance et accessibilité : Connaissance des bonnes pratiques en matière d'optimisation des performances et d'accessibilité."
             techTags={[
               {
