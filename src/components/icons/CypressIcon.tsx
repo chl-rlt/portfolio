@@ -10,7 +10,7 @@ const CypressIcon = ({
     width={size}
     height={size}
     className={className}
-    stroke-width="1"
+    strokeWidth="1"
   >
     <desc>Cypress Icon Streamline Icon: https://streamlinehq.com</desc>
     <path
@@ -46,8 +46,8 @@ const CypressIcon = ({
         y2="2931.33"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#315C55"></stop>
-        <stop offset="1" stop-color="#09293F"></stop>
+        <stop stopColor="#315C55"></stop>
+        <stop offset="1" stopColor="#09293F"></stop>
       </linearGradient>
       <linearGradient
         id="b"
@@ -57,8 +57,8 @@ const CypressIcon = ({
         y2="5605.29"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#4FB38D"></stop>
-        <stop offset="1" stop-color="#315C55"></stop>
+        <stop stopColor="#4FB38D"></stop>
+        <stop offset="1" stopColor="#315C55"></stop>
       </linearGradient>
       <linearGradient
         id="c"
@@ -68,8 +68,8 @@ const CypressIcon = ({
         y2="2027.28"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#4FB38D"></stop>
-        <stop offset="1" stop-color="#97DEC0"></stop>
+        <stop stopColor="#4FB38D"></stop>
+        <stop offset="1" stopColor="#97DEC0"></stop>
       </linearGradient>
       <linearGradient
         id="d"
@@ -79,8 +79,8 @@ const CypressIcon = ({
         y2="5365.35"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#97DEC0"></stop>
-        <stop offset="1" stop-color="ivory" stopOpacity="0"></stop>
+        <stop stopColor="#97DEC0"></stop>
+        <stop offset="1" stopColor="ivory" stopOpacity="0"></stop>
       </linearGradient>
     </defs>
   </svg>

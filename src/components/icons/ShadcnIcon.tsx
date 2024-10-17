@@ -19,7 +19,7 @@ const ShadcnIcon = ({
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      stroke-width="16"
+      strokeWidth="16"
     ></line>
     <line
       x1="192"
@@ -30,7 +30,7 @@ const ShadcnIcon = ({
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      stroke-width="16"
+      strokeWidth="16"
     ></line>
   </svg>
 );
