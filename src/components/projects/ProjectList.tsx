@@ -23,18 +23,32 @@ import BlurFade from "../magicui/blur-fade";
 import Image from "next/image";
 import VitePWAIcon from "../icons/VItePwaIcon";
 import ExpressIcon from "../icons/ExpressIcon";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@radix-ui/react-collapsible";
+import { ChevronDownIcon, Cross2Icon } from "@radix-ui/react-icons";
 
 export function ProjectsList() {
   const { theme } = useTheme();
   const [projects, setData] = useState<Project[]>([]);
-
+  const [openStates, setOpenStates] = useState<boolean[]>([]);
   useEffect(() => {
     fetch("/data/projects.json")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
+        setOpenStates(new Array(data.length).fill(false));
       });
   }, []);
+  const toggleOpen = (index: number) => {
+    setOpenStates((prev) => {
+      const newOpenStates = [...prev];
+      newOpenStates[index] = !newOpenStates[index]; // Toggle l'état pour ce projet
+      return newOpenStates;
+    });
+  };
   return (
     <div className="lg:py-24 sm:py-10 py-6">
       <BlurFade delay={0.25} inView>
@@ -50,7 +64,7 @@ export function ProjectsList() {
       </BlurFade>
       <div className="border sm:block hidden"></div>
       <div className={"flex flex-col gap-4 lg:flex-row mt-8 w-full"}>
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <BlurFade
             delay={0.25 * projects.indexOf(project) + 0.25}
             inView
@@ -80,11 +94,7 @@ export function ProjectsList() {
                 <h2 className="mt-4 text-xl font-bold dark:text-zinc-100 dark:group-hover:text-white text-zinc-700 sm:text-4xl font-display">
                   {project.name}
                 </h2>
-                <p className="mt-4 text-sm text-wrap duration-150 text-zinc-500 dark:group-hover:text-zinc-400 group-hover:text-zinc-600">
-                  {project.descriptionTitle}
-                </p>
-
-                <div className="mt-4 flex flex-wrap gap-4">
+                <div className="mt-3 flex flex-wrap gap-4">
                   {project.stack.map((stack) => (
                     <Tooltip key={stack.key}>
                       <TooltipTrigger className="text-xs font-medium">
@@ -96,6 +106,30 @@ export function ProjectsList() {
                     </Tooltip>
                   ))}
                 </div>
+                <Collapsible
+                  open={openStates[index]}
+                  onOpenChange={() => toggleOpen(index)}
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="mt-4 text-sm mr-3 text-wrap duration-150 text-zinc-500 dark:group-hover:text-zinc-400 group-hover:text-zinc-600">
+                      {project.descriptionTitle}
+                    </span>
+                    <CollapsibleTrigger asChild>
+                      <button className="inline-flex mt-5 text-zinc-500 dark:group-hover:text-zinc-400 group-hover:text-zinc-600 items-center justify-center rounded-full ">
+                        {openStates[index] ? (
+                          <Cross2Icon />
+                        ) : (
+                          <ChevronDownIcon />
+                        )}
+                      </button>
+                    </CollapsibleTrigger>
+                  </div>
+                  <CollapsibleContent>
+                    <p className="mt-4 text-sm text-wrap duration-150 text-zinc-500 dark:group-hover:text-zinc-400 group-hover:text-zinc-600">
+                      {project.description}
+                    </p>
+                  </CollapsibleContent>
+                </Collapsible>
               </div>
             </MagicCard>
           </BlurFade>
