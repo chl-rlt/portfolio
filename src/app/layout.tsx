@@ -17,7 +17,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "My portfolio",
+  title: "Chloé Rnlt | Portfolio",
   description: "Chloe Renault's portfolio",
   icons: {
     icon: "/favicon.ico",
