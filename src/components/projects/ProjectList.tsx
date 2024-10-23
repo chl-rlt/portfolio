@@ -110,11 +110,11 @@ export function ProjectsList() {
                   open={openStates[index]}
                   onOpenChange={() => toggleOpen(index)}
                 >
-                  <div className="flex items-center justify-between">
-                    <span className="mt-4 text-sm mr-3 text-wrap duration-150 text-zinc-500 dark:group-hover:text-zinc-400 group-hover:text-zinc-600">
-                      {project.descriptionTitle}
-                    </span>
-                    <CollapsibleTrigger asChild>
+                  <CollapsibleTrigger asChild>
+                    <div className="flex items-center justify-between">
+                      <span className="mt-4 text-sm mr-3 text-wrap cursor-pointer duration-150 text-zinc-500 dark:group-hover:text-zinc-400 group-hover:text-zinc-600">
+                        {project.descriptionTitle}
+                      </span>
                       <button className="inline-flex mt-5 text-zinc-500 dark:group-hover:text-zinc-400 group-hover:text-zinc-600 items-center justify-center rounded-full ">
                         {openStates[index] ? (
                           <Cross2Icon />
@@ -122,8 +122,9 @@ export function ProjectsList() {
                           <ChevronDownIcon />
                         )}
                       </button>
-                    </CollapsibleTrigger>
-                  </div>
+                    </div>
+                  </CollapsibleTrigger>
+
                   <CollapsibleContent>
                     <p className="mt-4 text-sm text-wrap duration-150 text-zinc-500 dark:group-hover:text-zinc-400 group-hover:text-zinc-600">
                       {project.description}

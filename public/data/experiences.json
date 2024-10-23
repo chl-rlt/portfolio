@@ -11,9 +11,9 @@
         "title": "ACTA DS",
         "description": "Développeuse Fullstack à Acta Digital Services, une ESN qui propose des solutions innovantes pour ses clients issus du milieu agricole. Je contribue à la création d'applications web et mobiles, au développement d'API mais également au maitien et à l'amélioration des outils existants.",
         "tech": [
+            "TypeScript",
             "React",
-            "Node.js",
-            "TypeScript"
+            "Node.js"
         ],
         "role": "Développeuse Fullstack React/Node.JS",
         "date": "Septembre 2021 - Aujourd'hui"
@@ -30,7 +30,8 @@
         "title": "Steve Gates",
         "description": "Suivi et développement de projets clients web divers. Maintenance et mise à jour de sites existants.",
         "tech": [
-            "Javascript"
+            "Javascript",
+            "TypeScript"
         ],
         "role": "Développeuse Web",
         "date": "Septembre 2020 - Septembre 2021"
