@@ -69,7 +69,7 @@ export default function Home() {
                 En savoir plus
               </a>
               <a
-                href="https://drive.google.com/file/d/1gbaRzYPHkqLSRVgTl1ixUhObEXCB2k4d/view?usp=sharing"
+                href="https://drive.google.com/file/d/1Qv5aED91W0RjUC0TOOi3A3e21k2ePVtB/view?usp=sharing"
                 target="_blank"
               >
                 <AnimatedShinyText className=" h-12 px-5 min-w-44 rounded-full border border-solid border-black/[.08] dark:border-white/[.145] inline-flex items-center justify-center cursor-pointer transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
