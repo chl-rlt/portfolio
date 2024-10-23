@@ -18,7 +18,7 @@ import CypressIcon from "../icons/CypressIcon";
 
 export const SkillList = () => {
   return (
-    <div className="border-y py-12 sm:mb-10">
+    <div className="border-y py-12 sm:mb-10" id="skills">
       <BlurFade delay={0.25} inView>
         <h2 className="text-3xl font-bold tracking-tight dark:text-zinc-100  sm:text-4xl mb-6 ">
           Compétences

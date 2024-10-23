@@ -1,4 +1,5 @@
 export type Experience = {
+  id: string;
   logo: Logo;
   title: string;
   link: string;

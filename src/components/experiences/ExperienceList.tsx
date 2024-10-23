@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Briefcase, Calendar, Star } from "lucide-react";
+import { Calendar, CircleEllipsis } from "lucide-react";
 import { useEffect, useState } from "react";
 import BlurFade from "../magicui/blur-fade";
 import { Experience } from "@/app/types/experience";
@@ -50,16 +50,6 @@ export const ExperienceList = () => {
                     {p.description}
                   </p>
 
-                  {/* {p.link && (
-                    <a
-                      href={p.link}
-                      className="text-blue-300 underline break-all"
-                      target="_blank"
-                    >
-                      {p.link}
-                    </a>
-                  )} */}
-
                   <div className="mt-4 flex flex-wrap">
                     {p.tech.map((tech) => (
                       <div
@@ -69,6 +59,11 @@ export const ExperienceList = () => {
                         {tech}
                       </div>
                     ))}
+                    {p.id === "1" && (
+                      <a href="#skills" className="mt-0.5 mr-2 text-gray-2">
+                        <CircleEllipsis size={20} />
+                      </a>
+                    )}
                   </div>
 
                   <div className="flex items-center space-x-2 mt-2 text-sm text-gray-400">
@@ -77,7 +72,7 @@ export const ExperienceList = () => {
                   </div>
                 </div>
 
-                {p.subItems && (
+                {/* {p.subItems && (
                   <ol className="mt-7 space-y-10 relative border-l dark:border-gray-800">
                     {p.subItems?.map((subItem, i) => (
                       <li key={i} className="p-1 ml-6">
@@ -151,7 +146,7 @@ export const ExperienceList = () => {
                       </li>
                     ))}
                   </ol>
-                )}
+                )} */}
               </li>
             </BlurFade>
           ))}
